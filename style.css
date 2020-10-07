@@ -9,27 +9,34 @@ body {
 
 .header {
   height: 100vh;
-  background-color: magenta;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(69, 162, 158, 0.5)), to(rgba(102, 252, 241, 0.5))), url(img/headphones-bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(img/headphones-bg.jpg);
+  background-size: cover;
+  /*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .header-primary {
   font-size: 10rem;
+  text-align: center;
 }
 
 .header-primary-main {
   display: block;
+}
+
+.header-primary-sub {
+  font-size: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
