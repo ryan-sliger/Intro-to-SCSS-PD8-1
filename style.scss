@@ -14,5 +14,28 @@ body {
   font-size: 62.5%; //50% on iphone
   //PX's are for monkeys, rem = relative units, 1 rem = 10px, vh = viewport  height or vw = viewport width 95vw === 95% of screen width hh
   //rachel is cool
-  background-color: color(primary-light);
+  font-family: "Josefin Sans", sans-serif;
+}
+.header {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+  background-color: limegreen;
+}
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.header-primary-main {
+  font-size: 10rem; //1rem === 10px
+  display: block;
+}
+.header-primary-sub {
+  font-size: 4rem;
 }
