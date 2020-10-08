@@ -6,6 +6,7 @@ $colors: (
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
 html,
 body {
   margin: 0;
@@ -14,6 +15,8 @@ body {
   font-size: 62.5%; //50% on iphone
   //PX's are for monkeys, rem = relative units, 1 rem = 10px, vh = viewport  height or vw = viewport width 95vw === 95% of screen width hh
   //rachel is cool
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
 }
 .header {
   height: 100vh;
@@ -30,6 +33,7 @@ body {
   justify-content: center;
   align-items: center; */
   position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 .header-text-box {
   position: absolute;
@@ -40,9 +44,13 @@ body {
 .header-primary {
   font-size: 10rem;
   text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 .header-primary-main {
   display: block;
+  letter-spacing: 1rem;
+  text-shadow: #333 6px 6px;
 }
 .header-primary-sub {
   font-size: 4rem;
