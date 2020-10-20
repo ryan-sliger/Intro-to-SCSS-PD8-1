@@ -3,8 +3,40 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
-  background-color: #66fcf1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(211, 47, 47, 0.5)), to(rgba(83, 109, 254, 0.5))), url(https://images.pexels.com/photos/62376/pexels-photo-62376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-image: linear-gradient(to right bottom, rgba(211, 47, 47, 0.5), rgba(83, 109, 254, 0.5)), url(https://images.pexels.com/photos/62376/pexels-photo-62376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  position: relative;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header-primary {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header-primary-main {
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.header-primary-sub {
+  font-size: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

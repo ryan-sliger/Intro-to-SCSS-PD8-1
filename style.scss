@@ -1,18 +1,60 @@
 $colors: (
-  primary: #45a29e,
-  primary-light: #66fcf1,
+  primary: #D32F2F,
+  secondary: #536DFE,
 );
 
 @function color($color-name) {
-  @return map-get($colors, $color-name);
+  @return map-get($colors, $color-name)
 }
+
 html,
-body {
+body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box; //Mr. Wjhalehn I forgot what this means??? Who cares Julissa, set it and forget it
-  font-size: 62.5%; //50% on iphone
-  //PX's are for monkeys, rem = relative units, 1 rem = 10px, vh = viewport  height or vw = viewport width 95vw === 95% of screen width hh
-  //rachel is cool
-  background-color: color(primary-light);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
 }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(color(primary),0.5),
+    rgba(color(secondary),0.5)
+  ),
+  url(https://images.pexels.com/photos/62376/pexels-photo-62376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  position: relative;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-primary {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+.header-primary-main {
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.header-primary-sub {
+  font-size: 4rem;
+
+}
+
+
+
+
+
